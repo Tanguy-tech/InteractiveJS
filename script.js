@@ -129,6 +129,15 @@ let page = document.getElementsByTagName('body');
 
 logo.addEventListener('keypress', myScript);
 
-function myScript() {
-    logo.style.color = "blue";
+function myScript(key) {
+    if (key == 'a') {
+        page.style.maxWidth = col-4;
+    } if (key == 'y') {
+        page.style.maxWidth = col-4;
+        page.style = center;
+    } if (key == 'p'){
+        page.style.float = right;
+    } if (key == 'b') {
+        page.style.maxWidth = '100%';
+    }
 }
